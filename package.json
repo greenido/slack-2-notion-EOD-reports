@@ -1,0 +1,23 @@
+{
+  "name": "slack-2-notion-eod-reports",
+  "version": "1.0.0",
+  "description": "Scheduled bot that syncs EOD reports from Slack channels into a Notion database",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --env-file=.env src/index.js",
+    "test": "node --require dotenv/config --test 'tests/**/*.test.js'"
+  },
+  "keywords": ["slack", "notion", "eod", "sync"],
+  "license": "MIT",
+  "dependencies": {
+    "@notionhq/client": "^2.2.0",
+    "@slack/web-api": "^7.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
